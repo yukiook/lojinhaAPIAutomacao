@@ -48,6 +48,7 @@ public class ProdutoTest {
                     .body("error", equalTo("O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00"))
                     .statusCode(422);
     }
+
     @Test
     @DisplayName("Validar que o valor do produto igual a 7000.01 não é permitido")
     public void testValidarLimiteMaiorSeteMilProibidoValorProduto(){
